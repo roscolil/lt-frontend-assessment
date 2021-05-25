@@ -1,11 +1,15 @@
+import React from 'react';
+import Container from './Components/Container/Container';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h2>Hello React</h2>
+      <Container />
+      <Container />
+      <Container />
     </div>
-  );
+  )
 }
 
 export default App;
