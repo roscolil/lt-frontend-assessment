@@ -1,0 +1,9 @@
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+ width: 100px;
+}
