@@ -54,7 +54,6 @@
     height: 65px;
     list-style-type: none;
 
-    // TODO vertically center text in dropdown footer
     a {
       color: #424242;
       text-align: center;
@@ -82,12 +81,12 @@
 }
 
 .li-music-wrapper {
+  align-items: center;
   color: #424242;
   display: flex;
   // flex-direction: column;
   padding: 15px 0;
   text-align: left;
-  align-items: center;
   // width: 75%;
 
   .li-name {
@@ -114,52 +113,52 @@
 }
 
 .dropdown-footer {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
-.song-img {
+.player-img {
   border-radius: 0;
-  margin-right: 0;
   margin-left: 15px;
+  margin-right: 0;
 }
 
 .music-img {
   border-radius: 0;
+  height: 30px;
   margin-right: 20px;
   width: 30px;
-  height: 30px;
 }
 
-.song-play {
+.player-play {
+  height: 30px;
   margin: 0 20px;
   width: 30px;
-  height: 30px;
 
   span {
     color: #424242;
   }
 }
 
-.dropdown-song {
-  display: flex;
+.dropdown-player {
   align-items: center;
+  display: flex;
   font-size: 15px;
   padding: 10px 20px 10px 0;
 }
 
 .progress-bar {
+  background-color: #bbbaba;
   display: flex;
   height: 2px;
-  background-color: #bbbaba;
-  width: 90%;
   margin: 0 auto;
+  width: 90%;
 
   &::after {
-    width: 40%;
-    content: "";
     background-color: #35ebae;
+    content: "";
     display: inline-block;
+    width: 40%;
   }
 }

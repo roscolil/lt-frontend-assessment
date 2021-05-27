@@ -6,8 +6,18 @@ const ShowLinks = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  // TODO click through to display details of show/venue on click
-  function handleOnClick() { alert('You need to pay to access this feature! :)') }
+  // TODO Expand this function to click through to display details of show/venue by passing in required object outlined here https://www.songkick.com/developer/response-objects
+  async function fetchShow() {
+    alert('Example of Songkick API query https://api.songkick.com/api/3.0/artists/{venue}/gigography.json?apikey={your_api_key}')
+    let url = ''
+    try {
+      fetch(url)
+        .then(res => res.json())
+        .then(json => console.log(json))
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div>
@@ -22,7 +32,7 @@ const ShowLinks = ({ title, data }) => {
             {
               data.map((item, index) => (
                 <li li className="dropdown-li" key={index} >
-                  <button className="li-btn" onClick={() => handleOnClick()}>
+                  <button className="li-btn" onClick={() => fetchShow()}>
                     <div className="li-venue-wrapper">
                       <span className="li-date">{item.date}</span>
                       <span className="li-venue">{item.venue}</span>

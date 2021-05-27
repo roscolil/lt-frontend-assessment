@@ -2,13 +2,22 @@ import React, { useState } from 'react';
 import './MusicLink.scss'
 import chevron from '../../assets/chevron-right.png'
 // TODO only toggle one link at a time
-const Dropdown = ({ title, data }) => {
+const MusicLink = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  // TODO click through to display details of show/venue on click
-  function handleOnClick() { alert('You need to pay to access this feature! :)') }
-  // TODO generic clasnames
+  function openPlayer() {
+    // TODO pass in player/songname here
+    let url = ''
+    try {
+      fetch(url)
+        .then(res => res.json())
+        .then(json => console.log(json))
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div>
       <div className="dropdown-btn"
@@ -19,10 +28,10 @@ const Dropdown = ({ title, data }) => {
       <div className={`dropdown ${isOpen ? 'open' : 'close'}`}>
         {isOpen && (
           <ul className="dropdown-wrapper">
-            <div className="dropdown-song">
-              <img className="song-img" src="https://via.placeholder.com/50" alt="" />
+            <div className="dropdown-player">
+              <img className="player-img" src="https://via.placeholder.com/50" alt="" />
               <a href="">
-                <img className="song-play" src="https://via.placeholder.com/30" alt="" />
+                <img className="player-play" src="https://via.placeholder.com/30" alt="" />
               </a>
               <span>{'Song name - Artists name'.substr(0, 20) + "\u2026"}</span>
             </div>
@@ -30,7 +39,7 @@ const Dropdown = ({ title, data }) => {
             {
               data.map((item, index) => (
                 <li li className="dropdown-li" key={index} >
-                  <button className="li-btn" onClick={() => handleOnClick()}>
+                  <button className="li-btn" onClick={() => openPlayer()}>
                     <div className="li-music-wrapper">
                       <img className="music-img" src="https://via.placeholder.com/30" alt="" />
                       <span className="li-name">{item.name}</span>
@@ -55,4 +64,4 @@ const Dropdown = ({ title, data }) => {
   )
 }
 
-export default Dropdown
+export default MusicLink
