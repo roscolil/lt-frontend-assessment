@@ -1,0 +1,119 @@
+.dropdown {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.dropdown-btn {
+  align-items: center;
+  background-color: #35ebae;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: flex;
+  font-size: inherit;
+  height: 48px;
+  justify-content: center;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  transition: 0.2s;
+  width: 85%;
+
+  &:hover {
+    background-color: white;
+    border: #35ebae;
+    border: 2px solid #35ebae;
+    color: grey;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
+
+.dropdown-li {
+  align-items: center;
+  color: #e0e0e0;
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  list-style-type: none;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #EFEFEF;
+    transition: 0.2s;
+  }
+}
+
+.dropdown-wrapper {
+  background-color: #EFEFEF;
+  margin: 0;
+  max-height: 250px;
+  overflow: scroll;
+  padding: 0;
+  width: 100%;
+
+  li {
+    height: 65px;
+    list-style-type: none;
+
+    // TODO vertically center text in dropdown footer
+    a {
+      color: #424242;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.li-btn {
+  align-items: center;
+  border: none;
+  border-bottom: 2px solid #bbbaba;
+  cursor: pointer;
+  display: inherit;
+  font-size: inherit;
+  justify-content: space-between;
+  outline: none;
+  padding: 0;
+  width: 90%;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.2s;
+  }
+}
+
+.li-venue-wrapper {
+  color: #424242;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  text-align: left;
+  width: 75%;
+
+  .li-date {
+    font-size: 15px;
+  }
+
+  .li-venue {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
+
+.li-tickets {
+  display: contents;
+  font-size: 12px;
+  margin: auto 0 auto auto;
+  vertical-align: middle;
+}
+
+.li-image {
+  height: 30px;
+  margin: auto 0 auto auto;
+  width: 30px;
+}
+
+.dropdown-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
