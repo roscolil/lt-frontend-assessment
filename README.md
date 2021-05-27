@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+### Linktree Frontend assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### By Ross Lillis
 
-## Available Scripts
+#### Sumbitted to Rory Mulherin on 28th May 2021
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+### Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A small single page app displayed in a mobile format as per designs provided.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## Environment & Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Language used:**
+  - Javascript/React
+- **Local Environment:**
 
-### `yarn build`
+  - Macbook Pro with MacOS Catalina (Version 10.15.7).
+  - Visual Studio Code
+  - CLI - iTerm with zsh
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dependencies/Node modules**
+  - `node-sass` library for styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Assumptions/Tradeoffs
 
-### `yarn eject`
+- Used `create-react-app` to bootstrap the application
+- Couldn't get assets from Zeplin so either used my own or placeholders
+- Component link names taken from design labels
+- Used TODO's to comment on thoughts/future changes
+- Used `scss` and `flexbox` where appropriate
+- A bit loose with the class names. Would ordinarily use css modules or sass with BEM
+- Pulled profile image directly from asset folder
+- Not built to be responsive
+- Made notes on where the API requests would be made to link to show/music selection and open music player
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Data**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Created a local json file with some seed data to pull into app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to use
 
-## Learn More
+1. Run `npm install` to install any dependencies
+2. Run `yarn start` to run the app in the development mode.
+3. Goto the localhost displayed in the terminal
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Tools
 
-### Code Splitting
+- Used commitizen for code commits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Version 2.0
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Include tests
+- Use Typescript
