@@ -1,0 +1,11 @@
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  z-index: 1;
+
+  .logo {
+    width: 80px;
+  }
+}
