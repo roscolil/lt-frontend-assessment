@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "user": "@rosslillis",
+    "links": [
+      {
+        "name": "Link 1",
+        "href": "https://google.com",
+        "type": "classic"
+      },
+      {
+        "name": "Link 2",
+        "href": "https://google.com",
+        "type": "classic"
+      },
+      {
+        "name": "Link 3",
+        "href": "https://google.com",
+        "type": "Shows"
+      },
+      {
+        "name": "Link 4",
+        "href": "https://google.com",
+        "type": "Music"
+      }
+    ],
+    "shows": [
+      {
+        "date": "May 22 2021",
+        "venue": "Rod Laver Arena",
+        "tickets": true
+      },
+      {
+        "date": "May 23 2021",
+        "venue": "Rod Laver Arena",
+        "tickets": true
+      },
+      {
+        "date": "May 24 2021",
+        "venue": "Myer Music Bowl",
+        "tickets": false
+      },
+      {
+        "date": "May 25 2021",
+        "venue": "Marvel Stadium",
+        "tickets": true
+      }
+    ],
+    "music": [
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Spotify"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Apple Music"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Soundcloud"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "YouTube Music"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Deezer"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Tidal"
+      },
+      {
+        "image": "https://via.placeholder.com/50",
+        "name": "Bandcamp"
+      }
+    ]
+  }
+]
