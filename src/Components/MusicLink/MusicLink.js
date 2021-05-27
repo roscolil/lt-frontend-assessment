@@ -26,6 +26,7 @@ const Dropdown = ({ title, data }) => {
               </a>
               <span>{'Song name - Artists name'.substr(0, 20) + "\u2026"}</span>
             </div>
+            <div className="progress-bar"></div>
             {
               data.map((item, index) => (
                 <li li className="dropdown-li" key={index} >

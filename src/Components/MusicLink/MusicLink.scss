@@ -148,3 +148,18 @@
   font-size: 15px;
   padding: 10px 20px 10px 0;
 }
+
+.progress-bar {
+  display: flex;
+  height: 2px;
+  background-color: #bbbaba;
+  width: 90%;
+  margin: 0 auto;
+
+  &::after {
+    width: 40%;
+    content: "";
+    background-color: #35ebae;
+    display: inline-block;
+  }
+}
