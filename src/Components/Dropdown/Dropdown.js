@@ -6,8 +6,8 @@ const Dropdown = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  // TODO click through to display details of show/venue on click
-  function handleOnClick() { alert('You need to pay to access this feature! :)') }
+  // TODO Create into HOC to be reused in shows/music links
+  function handleOnClick() { }
 
   return (
     <div>
