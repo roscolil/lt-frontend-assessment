@@ -1,10 +1,15 @@
 import React from 'react';
-import './Container.css';
+import './Container.scss';
+import Header from '../Header/Header';
+import Wrapper from '../Wrapper/Wrapper';
+import Footer from '../Footer/Footer';
 
 const Container = () => {
   return (
     <div className="container">
-      <h2>container</h2>
+      <Header />
+      <Wrapper />
+      <Footer />
     </div>
   )
 }
