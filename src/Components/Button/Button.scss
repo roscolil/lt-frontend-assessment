@@ -1,0 +1,21 @@
+.btn {
+  background-color: #35ebae;
+  border: 2px solid white;
+  color: #424242;
+  border-radius: 5px;
+  font-size: inherit;
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  transition: 0.2s;
+  width: 85%;
+
+  &:hover {
+    background-color: white;
+    border: #35ebae;
+    border: 2px solid #35ebae;
+    color: grey;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
