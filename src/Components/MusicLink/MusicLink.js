@@ -8,6 +8,7 @@ const MusicLink = ({ title, data }) => {
 
   function openPlayer() {
     // TODO pass in player/songname here
+    alert('pass in player/songname here in api request')
     let url = ''
     try {
       fetch(url)
