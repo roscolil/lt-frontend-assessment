@@ -37,6 +37,7 @@ A small single page app displayed in a mobile format as per designs provided.
 - A bit loose with the class names. Would ordinarily use css modules or sass with BEM
 - Pulled profile image directly from asset folder
 - Not built to be responsive
+- Set overflow on wrapper to 'auto' for ease of review. This would ordinarily be set to 'hidden;
 - Made notes on where the API requests would be made to link to show/music selection and open music player
 
 **Data**
